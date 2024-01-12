@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+/* Shared styles */
+*{
+     font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{     
+     background-color: #FF900E;
+     border-radius: 8px;
+     padding: 20px 25px;
+     border: none;
+     color: #FFF;
+     font-size: 1.25rem;
+     font-weight: 600;
+     cursor: pointer;
+}
+/* Header Styles */
+header{
+     background: rgba(255, 144, 14, 0.10);
+     padding: 50px 240px;
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+}
+.nav-title{
+     font-size: 2.8rem;
+     font-weight: 700;
+     color: rgb(19 19 19);
+}
+nav >ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+nav >ul li{
+     list-style: none;
+     margin-right: 30px;
+     font-weight: 500;
+     font-size: 1rem;
+}
+nav >ul li a{
+     text-decoration: none;
+     color: rgb(66 66 66);
+}
+.banner-content{
+     max-width: 800px;
+     text-align: center;
+     margin: 0 auto;
+}
+.banner-title{
+     font-size: 4rem;
+     font-weight: 700;
+     color: #131313;
+}
+.banner-description{
+     color: #727272;
+}
+.banner img{
+     width: 100%;
+     margin-top: 20px;
+}
+/* Main Styles */
+main{
+     max-width: 1440px;
+     margin: 0 auto;
+}
+.features-container{
+     display: flex;
+     align-items: center;
+}
+.features-image-container{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.5rem;
+}
+.features-content-container{
+     padding-left: 70px;
+     padding-right: 70px;
+}
+.features-title{
+     font-size: 2.8rem;
+}
+.quick-list {
+     color: #727272;
+     font-weight: 500;
+}
+.features{
+     color: #FF900E;
+     font-weight: 700;
+}
+
+/* Responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+     header{
+          padding: 20px;
+     }
+     nav{
+          flex-direction: column;
+     }
+     .nav-title{
+          text-align: center;
+     }
+     nav > ul{
+          justify-content: center;
+     }
+}
+@media screen and (min-width:576px) and (max-width: 1153px) {
+     header{
+          padding: 20px;
+     }
+     nav{
+          flex-direction: column;
+     }
+     .nav-title{
+          text-align: center;
+     }
+     nav > ul{
+          justify-content: center;
+}
